@@ -1,0 +1,23 @@
+{
+  "name": "testglobalsetup",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --config ./jest.basic-config.ts"
+    ,"test:withSyncSetup": "jest --config ./jest.setup-sync-config.ts"
+    ,"test:withSyncTeardown": "jest --config ./jest.teardown-sync-config.ts"
+    ,"test:withAsyncSetup": "jest --config ./jest.setup-async-config.ts"
+    ,"test:withAsyncTeardown": "jest --config ./jest.teardown-async-config.ts"
+    ,"test:withSyncBoth": "jest --config ./jest.sync-config.ts"
+    ,"test:withAsyncBoth": "jest --config ./jest.async-config.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@types/jest": "^29.5.14",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.5",
+    "ts-node": "^10.9.2"
+  }
+}
